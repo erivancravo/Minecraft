@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body, header, nav, ul, main, form, footer, div {
+  display: flex;
+}
+
+body {
+  flex-direction: column;
+  color: #FFFFFF;
+  font-family: 'Kufam', sans-serif;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('images/mine-background.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+header {
+  justify-content: center;
+}
+
+header img {
+  width: 120px;
+  height: 60px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+nav {
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-inline: 30px;
+}
+
+main {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(38, 38, 38, 0.8)),
+              linear-gradient(0deg, rgba(115, 115, 115, 0.5), rgba(115, 115, 115, 0.5));
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  top: 315px;
+  left: 735px;
+  border-radius: 12px;
+  border: 1px;
+
+}
+
+.logo {
+  width: 34px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.txtbox {
+  width: 376px;
+  min-height: 38px;
+  background-color: #262626;
+  border: 1px solid #414141;
+  border-radius: 3px;
+  padding: 7px, 14px, 7px, 14px;
+  gap: 8px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.submit-btn {
+  width: 376px;
+  height: 48px;
+  top: 640px;
+  left: 771px;
+  padding: 12px, 110px, 12px, 111px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  background: linear-gradient(to right, #22AE75, #00874F);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+footer {
+  justify-content: center;
+}
+
+
