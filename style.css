@@ -31,13 +31,15 @@ header img {
   width: 120px;
   height: 60px;
   margin-top: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 nav {
   justify-content: center;
+  align-items: center;
   font-weight: 600;
   font-size: 16px;
+  height: 33px;
 }
 
 ul {
@@ -124,7 +126,7 @@ form {
   height: 48px;
   top: 640px;
   left: 771px;
-  padding: 12px, 110px, 12px, 111px;
+  padding: 12px 110px 12px 111px;
   border-radius: 6px;
   color: #FFFFFF;
   background: linear-gradient(to right, #22AE75, #00874F);
@@ -164,4 +166,26 @@ footer ul div img {
   width: 32px;
 }
 
+#navList li {
+  flex-grow: 1;
+}
 
+#navList div:hover {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  gap: 8px;
+  color: #33E29A;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(2.5px);
+}
+
+#navList {
+  align-items: center;
+  justify-content:space-evenly ;
+  width: 627px;
+  height: 100%;
+}
