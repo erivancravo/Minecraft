@@ -16,8 +16,8 @@ body {
   flex-direction: column;
   color: #FFFFFF;
   font-family: 'Kufam', sans-serif;
-  height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('images/mine-background.jpeg');
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('images/Background.png');
   background-size: 100%;
   background-repeat: no-repeat;
 
@@ -30,7 +30,7 @@ header {
 header img {
   width: 120px;
   height: 60px;
-  margin-top: 40px;
+  margin-top: 18px;
   margin-bottom: 30px;
 }
 
@@ -62,10 +62,10 @@ form {
   align-items: center;
   width: 450px;
   height: 450px;
-  top: 315px;
-  left: 735px;
   border-radius: 12px;
   border: 1px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
 }
 
@@ -76,6 +76,15 @@ form {
   justify-content: center;
   width: 100%;
   margin-bottom: 24px;
+}
+
+.e-p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: start;
+  width: 376px;
 }
 
 .txtbox {
@@ -89,10 +98,25 @@ form {
   color: #FFFFFF;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+  padding-left: 15px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+#checkbox-div {
+  width: 376px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#checkbox-div .check {
+  background-color: #000000;
+  border: 1px solid #414141;
+  margin-right: 10px;
 }
 
 .submit-btn {
@@ -109,8 +133,35 @@ form {
   line-height: 24px;
 }
 
+#forgetPassword {
+  display: flex;
+  justify-content: center; 
+}
+
+#forgetPassword a {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #33E29A;
+  text-decoration: none;
+}
+
 footer {
   justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+footer ul div img {
+  height: 32px;
+  width: 32px;
 }
 
 
