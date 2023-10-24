@@ -13,7 +13,7 @@
 </head>
 <body>
   <header class="over">
-    <img src="images/mine-logo.png" alt="mine-logo"><div class="mobile-only"><img src="images/List.png" alt="menu-btn"></div>
+    <img src="images/mine-logo.png" alt="mine-logo"><div class="mobile-only"><img id="menu-btn" src="images/List.png" alt="menu-btn"></div>
   </header>
   <nav>
     <ul id="navList">
@@ -35,21 +35,21 @@
     </ul>
   </nav>
   <main>
-    <form action="">
+    <form>
       <div class="logo">
         <img src="images/logo.png" alt="logo">
       </div>
       <div class="e-p">
-        <label for="email">E-mail</label>
+        <label id="forEmail" for="email" style="color:#ffffff">E-mail</label>
       </div>
       <div>
-        <input class="txtbox" type="text" name="email" value="eriviscode@gmail.com">
+        <input class="txtbox" id="userEmail" type="text" name="email" placeholder="eriviscode@gmail.com">
       </div>
       <div class="e-p">
-        <label for="password">Senha</label>
+        <label id="forPassword" for="password" style="color:#ffffff">Senha</label>
       </div>
       <div>
-        <input class="txtbox" type="text" name="password" value="0123456">
+        <input class="txtbox" id="userPassword" type="text" name="password" placeholder="0123456">
       </div>
       <div id="checkbox-div">
         <input class="check" type="checkbox" name="savePassword" value="">

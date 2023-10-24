@@ -38,10 +38,6 @@ header img {
   display: none;
 }
 
-.mobile-only img {
-  display: none;
-}
-
 nav {
   justify-content: center;
   align-items: center;
@@ -105,7 +101,7 @@ form {
   border-radius: 3px;
   padding: 7px, 14px, 7px, 14px;
   gap: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   padding-left: 15px;
@@ -113,6 +109,11 @@ form {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+::placeholder {
+  font-weight: bolder;
+  line-height: 24px;
 }
 
 #checkbox-div {
@@ -202,6 +203,7 @@ footer ul div img {
   justify-content:space-evenly ;
   width: 627px;
   height: 100%;
+  border-radius: 6px;
 }
 
 /* Agora não saberei diferenciar o certo do errado */
@@ -228,8 +230,38 @@ footer ul div img {
     margin-right: 26px;
   }
 
+  nav {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #navList div:hover {
+    gap:unset;
+    width: unset;
+  }
+
+  #navList div {
+    text-align: center;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(38, 38, 38, 0.80);
+    backdrop-filter: blur(5px);
+    border-radius: 6px;
+  }
+
   #navList {
     display: none;
+    width: 100%;
+    transition: 0.5s;
+    justify-content: space-evenly;
+    background: rgba(38, 38, 38, 0.80);
+    backdrop-filter: blur(5px);
+  }
+
+  #navList li {
+    margin-inline:unset;
   }
 
   form {
@@ -245,5 +277,21 @@ footer ul div img {
   footer ul {
     flex-direction: column;
     gap: 36px;
+  }
+}
+
+@media(max-width: 425px) {
+  #navList li {
+    font-size: 12px;
+    margin: 5px;
+  }
+  nav {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #navList div:hover {
+    gap:unset;
+    width: unset;
   }
 }
