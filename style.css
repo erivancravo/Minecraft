@@ -179,6 +179,7 @@ footer {
 footer ul div img {
   height: 32px;
   width: 32px;
+  margin-bottom: 18px;
 }
 
 #navList li {
